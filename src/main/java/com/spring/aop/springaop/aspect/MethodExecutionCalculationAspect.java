@@ -12,7 +12,6 @@ import org.springframework.context.annotation.Configuration;
 public class MethodExecutionCalculationAspect {
 
     private Logger logger = LoggerFactory.getLogger(this.getClass());
-
     //Define the method calls that we want to intercept
     //"execution(* packageName.*.*(..))"
     //"execution(* packageName..*.*(..))" // Any calls will get intercepted
@@ -27,5 +26,4 @@ public class MethodExecutionCalculationAspect {
         long timeTaken = System.currentTimeMillis() - startTime;
         logger.info("Time taken by {} is {}", proceedingJoinPoint, timeTaken);
     }
-
 }

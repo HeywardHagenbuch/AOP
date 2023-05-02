@@ -35,8 +35,5 @@ public class AfterAspect {
     @After(value = "execution( * com.spring.aop.springaop..*.*(..))")
     public void after(JoinPoint joinPoint) {
         logger.info("{} returned with value", joinPoint);
-
     }
-
-
 }

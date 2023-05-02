@@ -13,8 +13,8 @@ import org.springframework.context.annotation.Configuration;
 @Aspect
 @Configuration
 public class UserAccessAspect {
-    //Check if the user has the right access before he can access the method in an entire layer
 
+    //Check if the user has the right access before he can access the method in an entire layer
     private Logger logger = LoggerFactory.getLogger(this.getClass());
 
     //Define the method calls that we want to intercept
